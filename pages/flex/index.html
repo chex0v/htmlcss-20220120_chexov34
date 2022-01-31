@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test flex</title>
+  <style>
+    body {
+      padding: 50px;
+      margin: 0 auto;
+      background: rgba(128, 128, 128, 0.35);
+    }
+    .flex-container {
+      display: flex;
+      background: red;
+      flex-direction: column;
+    }
+    .item {
+      width: 100px;
+      height: 100px;
+      background: blue;
+      padding: 10px;
+      color: #fff;
+      text-align: center;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flex-container">
+    <div class="item">First</div>
+    <div class="item">Second</div>
+  </div>
+</body>
+
+</html>
