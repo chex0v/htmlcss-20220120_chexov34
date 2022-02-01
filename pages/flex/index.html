@@ -15,24 +15,25 @@
     .flex-container {
       display: flex;
       background: red;
-      flex-direction: column;
+      height: 100px;
+      justify-content: space-around;
+      width: 500px;
     }
     .item {
-      width: 100px;
-      height: 100px;
       background: blue;
-      padding: 10px;
       color: #fff;
       text-align: center;
       vertical-align: middle;
+      flex-grow: 1;
+      flex-basis: 100px;
     }
   </style>
 </head>
 
 <body>
   <div class="flex-container">
-    <div class="item">First</div>
-    <div class="item">Second</div>
+    <div class="item" style="width: 499px;"></div>
+    <div class="item"></div>
   </div>
 </body>
 
