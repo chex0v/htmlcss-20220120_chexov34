@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- Детальная компонента -->
+<html lang="ru">
+
+<head>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <style>
+    html {
+      height: 2000px;
+    }
+    .l-page {
+      display: flex;
+      border: 1px solid black;
+      border-radius: 2px;
+      height: 400px;
+      width: 900px;
+      position: relative;
+    }
+
+    .box {
+      background: red;
+      color: white;
+      display: inline-block;
+      width: 150px;
+      height: 150px;
+      font-size: 30px;
+      padding: 50px 0;
+      box-sizing: border-box;
+      text-align: center;
+      margin-right: 10px;
+    }
+
+    .box--relative {
+      background: blue;
+      position: relative;
+      top: 10px;
+      left: 40px;
+    }
+
+    .box--absolute {
+      background: green;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .box--fixed {
+      background: purple;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .box--sticky {
+      background: yellow;
+      position: sticky;
+      top: 0;
+    }
+  </style>
+</head>
+
+<body class="background-grey">
+  <div class="l-page">
+    <div class="box box--relative">
+      Relative
+    </div>
+    <div class="box box--absolute">
+      Absolute
+    </div>
+    <div class="box box--fixed">
+      Fixed
+    </div>
+    <div class="box box--sticky">
+      Sticky
+    </div>
+    <div class="box">
+      Static
+    </div>
+  </div>
+</body>
+
+</html>
